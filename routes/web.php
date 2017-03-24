@@ -15,20 +15,15 @@ Route::get('/', function () {
     return view('Website::index');
 });
 
-Route::prefix('pagseguro')->group(function (){
-    Route::get('redirect',function (){ })->name('pagseguro.redirect');
-    Route::get('notification',function (){ })->name('pagseguro.notification');
-});
-
 
 //Roote da aplicação vuejs
-Route::prefix('home')->group(function (){
+/*Route::prefix('home')->group(function (){
 
     Route::get('/', function () {
         return view('app');
     });
 
-});
+});*/
 
 Route::get('/debug',function (){
     dd(app());
@@ -59,6 +54,6 @@ Route::post('/messages', function () {
 })->middleware('auth');
 
 
+/*Auth::routes();
 
-
-
+Route::get('/home', 'HomeController@index');*/

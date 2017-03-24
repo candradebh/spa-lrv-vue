@@ -16,18 +16,22 @@
 </head>
 <body>
 <div id="app">
+
+{{--    <ul id="nav-mobile" class="side-nav">
+        @include('Website::_links')
+    </ul>--}}
+
     <div class="navbar-fixed">
-        <nav class="white" role="navigation">
+        <nav class="white">
             <div class="nav-wrapper container">
                 <a id="logo-container" href="{{url('website')}}" class="brand-logo">Site</a>
                 <ul class="right hide-on-med-and-down">
                     @include('Website::_links')
                 </ul>
 
-                <ul id="nav-mobile" class="side-nav">
-                    @include('Website::_links')
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                <a href="#!" data-activates="nav-mobile" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
             </div>
         </nav>
     </div>
@@ -80,7 +84,7 @@
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="{{asset('/js/materialize.min.js')}}"></script>
-<script src="{{asset('/js/main.js')}}"></script>
+{{--<script src="{{asset('/js/main.js')}}"></script>--}}
 <script src="{{asset('/js/site/init.js')}}"></script>
 
 </body>

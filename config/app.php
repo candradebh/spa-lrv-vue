@@ -167,11 +167,8 @@ return [
          * Package Service Providers...
          */
         ArtemSchander\L5Modular\ModuleServiceProvider::class,
-        //Backpack\PermissionManager\PermissionManagerServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
-        LaravelPagseguro\LaravelPagseguroServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
-        Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         /*
          * Application Service Providers...
@@ -235,14 +232,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        //JWT
+
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
 
-        //SENTINEL
-        'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
-        'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
-        'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
+
     ],
 
 ];

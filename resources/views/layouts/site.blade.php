@@ -19,13 +19,13 @@
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" href="{{url('website')}}" class="brand-logo">Site</a>
+                <a id="logo-container" href="{{route('site.index')}}" class="brand-logo">Site</a>
                 <ul class="right hide-on-med-and-down">
-                    @include('Website::_links')
+                    @include('site._links')
                 </ul>
 
                 <ul id="nav-mobile" class="side-nav">
-                    @include('Website::_links')
+                    @include('site._links')
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
@@ -50,7 +50,7 @@
                 <h5 class="white-text">Settings</h5>
                 <ul>
                     <li><a class="white-text" href="{{url('api')}}">Login</a></li>
-                    <li><a class="white-text" href="{{url('website')}}">Site</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
                     <li><a class="white-text" href="#!">Link 3</a></li>
                     <li><a class="white-text" href="#!">Link 4</a></li>
                 </ul>
@@ -58,10 +58,10 @@
             <div class="col l3 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                    <li><a class="white-text" href="{{url('website')}}">Home</a> </li>
-                    <li><a class="white-text" href="{{url('website/services')}}">Services</a></li>
-                    <li><a class="white-text" href="{{url('website/products')}}">Products</a></li>
-                    <li><a class="white-text" href="{{url('website/contacts')}}">Contact</a></li>
+                    <li><a class="white-text" href="{{route('site.index')}}">Home</a> </li>
+                    <li><a class="white-text" href="{{route('site.services.index')}}">Services</a></li>
+                    <li><a class="white-text" href="{{route('site.products.index')}}">Products</a></li>
+                    <li><a class="white-text" href="{{route('site.contacts.index')}}">Contact</a></li>
                 </ul>
             </div>
         </div>

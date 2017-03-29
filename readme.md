@@ -9,9 +9,7 @@
 - Vue Resource 1.2.0
 - axios
 - webpack and gulp
-- L5 modular (https://github.com/Artem-Schander/L5Modular)
 - dataViewer (https://github.com/codekerala/data-viewer-laravel-vuejs)
-- backpack/permissionmanager (https://github.com/Laravel-Backpack/PermissionManager)
 
 ### Provides:
 
